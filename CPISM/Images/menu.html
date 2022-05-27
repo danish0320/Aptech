@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid" style="background-color: tomato;">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <img src="Images/E-Project Icon.png" height="50px" width="50px">
+      <a class="navbar-brand" href="index.html">Vinegar Foods<span class="visually-hidden">(current)</span></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="bv.html">Bevrages</a>
+              <a class="dropdown-item" href="dt.html">Dessert</a>
+              <a class="dropdown-item" href="lh.html">Lunch</a>
+              <a class="dropdown-item" href="sk.html">Snacks</a>
+              <a class="dropdown-item" href="ex.html">Extras</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-danger my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#modelId">
+          Contact
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Conatct Food Vinegar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating">
+                            <input type="text" placeholder="username" class="form-control" id="in">
+                            <label for="in">Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="tel" placeholder="phoone number" class="form-control" id="pn">
+                            <label for="pn">Contact Num</label>
+                        </div>
+                        <div class="form-floating">
+                          <textarea name="" id="" cols="3" rows="30" placeholder="message" class="form-control" id="pn"></textarea>
+                          
+                          <label for="mg">Message</label>
+                      </div>
+
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                         <span style="color: gray;">Are you an existing customer?</span> 
+                                       </label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-warning" type="button">Send</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="about" style="padding: 15px;color: white;">
+    <h1 class="display-6 text-center">About Us</h1>
+    <p class="text-center">Food Vinegar is a Food Restaurant , Serving and delivering food allover Pakistan.
+      We are available in 25 cities in Pakistan with main oultet in Karachi.
+    </p>
+  </div>
+  <div class="products" style="background-color: rgb(19,19,19); padding: 25px;">
+    <div class="row" style="padding-top: 2%;">
+      <div style="margin: 2px; color: tomato;">
+        <h1 class="display-6 text-center">Menu</h1>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Snacks/Hamburger.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Ham Burger</h4>
+            <p class="card-text">MRP:Rs:250</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Chocolate.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Choclate Shake</h4>
+            <p class="card-text">MRP:Rs:200</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Fajita.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Special Fajita</h4>
+            <p class="card-text">MRP:Rs:350</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Lunch/Turkey.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Special Turkey</h4>
+            <p class="card-text">MRP:Rs:550</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 2%;">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Lemonade.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Mint Lemonade</h4>
+            <p class="card-text">MRP:Rs:150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Kitkat.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Kit Kat Ice Cream</h4>
+            <p class="card-text">MRP:Rs:280</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Lasagna.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Special Lasanga</h4>
+            <p class="card-text">MRP:Rs:350</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="Images/Flexs/Zinger.png" alt="Card image cap" style="height: 100px;">
+          <div class="card-body">
+            <h4 class="card-title">Regular Zinger</h4>
+            <p class="card-text">MRP:Rs:230</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="color: tomato;">
+  <div style="background-color: rgb(19,19,19); color: tomato; text-align: center; padding: 5%;">
+    <div class="row">
+      <div class="col-6">
+        <img src="Images/E-Project Logo.png" width="70px" height="70px" style="display: inline;">
+        <h5 style="display: inline;">Food Vinegar</h5>
+        <ul class="list-unstyled">
+          <li>
+            Food Vinegar is a Food Restaurant delivering food allover Pakistan.
+          </li>
+          <li>
+            ISO Certified, Registerd.
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        Address: Shop No. 134, M.A. Jinnah Road, Karachi,
+        Pakistan.<br> Call (12 PM to 8 PM): 0311-6646222<br> Phone (2 PM to 11 PM): 021-38098500<br> 021-38098501 -
+        021-38098502 -
+        021-38098503
+        <br> Email: foodvingear@gmail.com<br> For Orders: foodvinegar.com.pk<br>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

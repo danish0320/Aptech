@@ -1,0 +1,22 @@
+body {
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-family: Elephant;
+    text-align: center;
+    color: slateblue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+table {
+    background-color: slateblue;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    border-collapse: collapse;
+    border: 2px solid black;
+}

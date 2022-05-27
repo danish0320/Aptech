@@ -1,0 +1,6 @@
+document.write("<h3>AND</h3>")
+document.write(19 & 27)
+document.write("<h3>OR</h3>")
+document.write(19 | 27)
+document.write("<h3>NOT</h3>")
+document.write( ~ 5)

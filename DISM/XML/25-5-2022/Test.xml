@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Test.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="Test.css" type="text/css"?>
+<?xml-model href="Test.dtd" type="application/xml-dtd"?>
+<?xml-stylesheet href="Test.xsl" type="text/xsl"?>
+<Information>
+    <Student>
+        <StudentID>10</StudentID>
+        <Name>Sara</Name>
+        <Age>18</Age>
+        <Email>sara@gmail.com</Email>
+        <City>Karachi</City>
+    </Student>
+    <Student>
+        <StudentID>12</StudentID>
+        <Name>Zara</Name>
+        <Age>20</Age>
+        <Email>zara@gmail.com</Email>
+        <City>Lahore</City>
+    </Student>
+    <Student>
+        <StudentID>11</StudentID>
+        <Name>Hira</Name>
+        <Age>19</Age>
+        <Email>hira@gmail.com</Email>
+        <City>Karachi</City>
+    </Student>
+</Information>

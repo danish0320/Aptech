@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 35px;
+            width: 300px;
+        }
+        
+        .btn {
+            color: white;
+            background-color: dodgerblue;
+            height: 35px;
+            width: 308px;
+        }
+        
+        .rt {
+            color: white;
+            background-color: red;
+            height: 35px;
+            width: 308px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="firstname" id="firstname" onblur="fn()"><img src="" height="10px" width="10px" id="im">
+    <p id="p1" style="display: inline; color: red;"></p>
+    <br>
+    <input type="text" placeholder="lastname" id="lastname" onblur="ln()"><img src="" height="10px" width="10px" id="im1">
+    <p id="p1" style="display: inline; color: red;"></p>
+    <br>
+    <input type="email" placeholder="email" id="email" onblur="em()"><img src="" height="10px" width="10px" id="im2">
+    <p id="p2" style="display: inline; color: red;"></p>
+    <br>
+    <input type="password" placeholder="password" id="password" onblur="pw()"><img src="" height="10px" width="10px" id="im3">
+    <p id="p3" style="display: inline; color: red;"></p>
+    <br>
+    <button type="submit" onclick="un(), em(),pw()" class="btn">Validate</button><br>
+    <button type="reset" onclick="cn()" class="rt">Reset</button>
+    <!-- <p id="result" style="color: red;"></p> -->
+    <script>
+        function fn() {
+            var firstname = document.getElementById("firstname").value;
+            var regex1 = /^[\w]{3,}$/gm
+            if (regex1.test(firstname)) {
+                document.getElementById("im").src = "tick.png";
+                document.getElementsByTagName("p")[0].innerHTML = ""
+            } else {
+                document.getElementsByTagName("p")[0].innerHTML = "name should be greater than 2 letters"
+                document.getElementById("im").src = "";
+            }
+
+        }
+
+        function ln() {
+            var lastname = document.getElementById("lastname").value;
+            var regex2 = /^[\w]{3,}$/gm
+            if (regex2.test(lastname)) {
+                document.getElementById("im1").src = "tick.png";
+                document.getElementsByTagName("p")[1].innerHTML = ""
+            } else {
+                document.getElementsByTagName("p")[1].innerHTML = "name should be greater than 2 letters"
+                document.getElementById("im1").src = "";
+            }
+
+        }
+
+        function em() {
+            var email = document.getElementById("email").value;
+            var regex3 = /^[\w]{3,}[@][\D]{3,}(.com)$/gm
+            if (regex3.test(email)) {
+                document.getElementById("im2").src = "tick.png";
+                document.getElementsByTagName("p")[2].innerHTML = ""
+            } else {
+                document.getElementsByTagName("p")[2].innerHTML = "Invalid email address"
+                document.getElementById("im2").src = "";
+            }
+
+        }
+
+        function pw() {
+            var password = document.getElementById("password").value;
+            var regex4 = /^[\w]{6,}$/gm
+            if (regex4.test(password)) {
+                document.getElementById("im3").src = "tick.png";
+                document.getElementsByTagName("p")[3].innerHTML = ""
+            } else {
+                document.getElementsByTagName("p")[3].innerHTML = "password should be greater than 2 letters"
+                document.getElementById("im3").src = "";
+            }
+
+        }
+
+        function cn() {
+            var ok = confirm("Are you sure")
+            if (ok) {
+                alert("Validation Successfully")
+            }
+        }
+    </script>
+</body>
+
+</html>

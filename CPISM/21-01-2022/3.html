@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="username" id="user">
+    <input type="email" placeholder="email" id="email">
+    <input type="password" placeholder="password" id="pass">
+    <input type="button" value="submit" onclick="abcd()">
+    <p id="print" style="color: red;"></p>
+    <script>
+        function abcd() {
+            var username = document.getElementById("user").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pass").value;
+            var nullvalue = ""
+            if (username == "") {
+                nullvalue += "username"
+            }
+            if (email == "") {
+                nullvalue += "email"
+            }
+            if (password == "") {
+                nullvalue += "password"
+            }
+            document.getElementById("print").innerHTML = "please fill" + " " + nullvalue
+        }
+    </script>
+</body>
+
+</html>

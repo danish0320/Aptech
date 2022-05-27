@@ -1,0 +1,49 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Information">
+        <xs:complexType>
+            <xs:element name="Student">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="StudentID">
+                            <xs:complexType>
+                                <xs:restriction base="xs:integer"></xs:restriction>
+                                <xs:minLength value="2"></xs:minLength>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Name">
+                            <xs:complexType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="/^[A-Za-z]+$/" />
+                                </xs:restriction>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Age">
+                            <xs:complexType>
+                                <xs:restriction base="xs:integer"></xs:restriction>
+                                <xs:minInclusive value="18"></xs:minInclusive>
+
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Email">
+                            <xs:complexType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" />
+                                </xs:restriction>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="city">
+                            <xs:complexType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration>Karachi</xs:enumeration>
+                                    <xs:enumeration>Lahore</xs:enumeration>
+                                    <xs:enumeration>Karachi</xs:enumeration>
+                                </xs:restriction>
+
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

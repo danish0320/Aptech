@@ -1,0 +1,9 @@
+<!DOCTYPE Information [
+               <!ELEMENT  (Student)*>
+               <!ELEMENT Student (StudentID,Name,Age,Email,City)>
+               <!ELEMENT StudentID (#PCDATA)>
+               <!ELEMENT Name (#PCDATA)>
+               <!ELEMENT Age (#PCDATA)>
+               <!ELEMENT Email (#PCDATA)>
+               <!ELEMENT City (#PCDATA)>
+]>

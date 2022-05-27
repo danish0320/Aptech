@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: Elephant;
+            text-align: center;
+            color: blueviolet;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 25pt;
+        }
+        
+        table {
+            background-color: blueviolet;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 11pt;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>REGISTRATION FORM</h2>
+        <table align="center" cellpadding="10">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" required>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" required>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="tel" required>(10 digit number)</td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>MALE<input type="checkbox" required> FEMALE
+                    <input type="checkbox" required></td>
+            </tr>
+            <tr>
+                <td>ADDRESS <br><br><br></td>
+                <td><textarea name="address" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" required>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>PINCODE</td>
+                <td><input type="text" required>(max 6 digits ex 123-789)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" required>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input value="Pakistan" readonly></td>
+            </tr>
+            <tr>
+                <td>HOBBIES <br><br><br></td>
+                <td>Drawing<input type="checkbox"> Singing
+                    <input type="checkbox"> Dancing
+                    <input type="checkbox"> Sketching
+                    <input type="checkbox"><br> Others
+                    <input type="checkbox"><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>QUALIFICATION<br><br><br><br><br><br><br></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td align="center">S.No</td>
+                            <td align="center">Examinition</td>
+                            <td align="center">Boards</td>
+                            <td align="center">Percentage</td>
+                            <td align="center">Year of Passing</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>(10 character max)</td>
+                            <td>(up to 2 decimal)</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>COURSES<br>APPLIED FOR</td>
+                <td>BCA <input type="radio">BSC <input type="radio">BCOM <input type="radio">BA <input type="radio"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit">
+                    <input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

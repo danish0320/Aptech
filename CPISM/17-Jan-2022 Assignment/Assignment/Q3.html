@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="one">Introduction</h1>
+    <h1 id="two">Statement</h1>
+    <h1 id="three">Observation</h1>
+    <h1 id="four">Explanation</h1>
+    <h1 id="five">Conclusion</h1>
+    <li id="1">One</li>
+    <li id="2">Two</li>
+    <li id="3">Three</li>
+    <li id="4">Four</li>
+    <li id="5">Five</li>
+    <button onclick="f()">Convert h to li</button>
+    <script>
+        function f() {
+            var a = document.getElementById("one").innerHTML;
+            var b = document.getElementById("two").innerHTML;
+            var c = document.getElementById("three").innerHTML;
+            var d = document.getElementById("four").innerHTML;
+            var e = document.getElementById("five").innerHTML;
+            document.getElementById("1").innerHTML = a
+            document.getElementById("2").innerHTML = b
+            document.getElementById("3").innerHTML = c
+            document.getElementById("4").innerHTML = d
+            document.getElementById("5").innerHTML = e
+        }
+    </script>
+</body>
+
+</html>

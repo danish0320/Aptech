@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script>
+        function showStyle(field) {
+            field.style.backgroundColor = 'red';
+        }
+
+        function hideStyle(field) {
+            field.style.backgroundColor = 'yellow';
+        }
+
+        function setFontStyle(field) {
+            field.style.fontWeight = 'bold';
+            field.style.fontFamily = 'Elephant'
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Feedback Form</h2>
+    <form>
+        Name:
+        <input type="text" onfocus="showStyle(this);" onblur="hideStyle(this);" onselect="setFontStyle(this);" />
+        <br> Email:
+        <input type="text" onfocus="showStyle(this);" onblur="hideStyle(this);" onselect="setFontStyle(this);" />
+        <br>
+        <button type="submit">Submit</button>
+        <!-- <input id="btnSubmit" type="button" value="Submit" /> -->
+        <button type="reset">reset</button>
+    </form>
+</body>
+
+</html>

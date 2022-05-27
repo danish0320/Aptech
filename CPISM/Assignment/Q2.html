@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+
+<body>
+    <h2>Feedback Form</h2>
+    <form>
+        Username:<input type="text" placeholder="username" id="a">
+        <br> Password:
+        <input type="password" placeholder="password" id="p">
+        <br> Repeat Password:
+        <input type="password" placeholder="repeat password" id="rp">
+        <br> E-mail:
+        <input type="email" placeholder="email" id="b">
+        <br> Phone Number:
+        <input type="tel" placeholder="phone number" id="c">
+        <br>
+        <button onclick="f()">submit</button>
+    </form>
+    <script>
+        function f() {
+            var user = document.getElementById("a").value
+            var password = document.getElementById("p").value
+            var repeatpassword = document.getElementById("rp").value
+            var email = document.getElementById("b").value
+            var num = document.getElementById("c").value
+
+
+            if (user == '' ||password == ''||repeatpassword == ''||email == ''||num == '') {
+                alert("Please fill all fields");
+            } else if (repeatpassword != password) {
+                alert("both password should be same");
+            } else {
+                alert("Thankyou for signing in");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

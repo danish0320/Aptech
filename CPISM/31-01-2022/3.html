@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+               <meta charset="UTF-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+               <style>
+                              div {
+                                             height: 150px;
+                                             width: 100%;
+                                             background-color: cornflowerblue;
+                              }
+
+                              button {
+                                             height: 50px;
+                                             width: 100%;
+                                             background-color: darkblue;
+                                             color: white;
+                              }
+                              button:hover{
+                                             background-color: hotpink;
+                                             color: darkmagenta;
+                              }
+               </style>
+               <script>
+                              $(document).ready(function(){
+                                             $("div").on({
+                                                            click :function(){
+                                                                           $(this).css("background-color","gold")
+                                                                           $(this).css("color","tomato")
+                                                            }
+                                             })
+                                             $("button").click(function(){
+                                                                           $("div").css("color","yellow")
+                                                                           $("div").css("background-color","red")
+                                                                           $("div").css("font-family","elephant")
+                                                                           $("div").css("text-align","center")
+
+                                                            })
+                                             })
+               </script>
+</head>
+
+<body>
+               <div>
+                              <h1>Hello World</h1>
+               </div>
+               <button>CLICK HERE TO SEE THE MAGIC</button>
+</body>
+
+</html>

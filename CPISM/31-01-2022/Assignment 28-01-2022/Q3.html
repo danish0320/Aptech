@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("select").change(function() {
+                var p = $("select").val()
+                if (p == "1") {
+                    $("#price").val("100000")
+                }
+                if (p == "2") {
+                    $("#price").val("65000")
+                }
+                if (p == "3") {
+                    $("#price").val("40000")
+                }
+            })
+            $("#quantity").change(function() {
+                var p = $("#price").val();
+                var q = $("#quantity").val();
+                var total = parseInt(p * q)
+                $("#tp").val(total)
+            })
+
+        })
+    </script>
+    <input type="text" placeholder="Enter Your name">
+    <br><br>
+    <select>
+        <option value="1">Iphone</option>
+        <option value="2">Samsung</option>
+        <option value="3">Oppo</option>
+    </select>
+    <br><br>
+    <input type="text" placeholder="price" id="price" disabled>
+    <input type="text" placeholder="quantity" id="quantity">
+    <input type="text" placeholder="total price" disabled id="tp">
+</body>
+
+</html>

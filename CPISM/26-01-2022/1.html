@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Dropdown</title>
+</head>
+
+<body>
+    <form>
+        <label for="Options">Choose an option</label>
+        <select name="Options">
+            <option value="0"></option>
+            <option value="1">Danish</option>
+            <option value="2">Hamza</option>
+        </select>
+        <br>
+        <input type="button" value="Submit" onclick="s()">
+        <p id="para"></p>
+    </form>
+    <script>
+        function s() {
+            var x = document.getElementsByTagName("select")[0].value;
+
+            if (x == "1") {
+                document.getElementById("para").innerHTML = "My name is Muhammad Danish"
+            } else if (x == "2") {
+                document.getElementById("para").innerHTML = "My name is Muhammad Hamza"
+            } else {
+                document.getElementById("para").innerHTML = "Invalid"
+            }
+        }
+    </script>
+</body>
+
+</html>

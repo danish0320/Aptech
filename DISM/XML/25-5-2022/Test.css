@@ -1,0 +1,29 @@
+Student {
+    color: darkorange;
+    display: block;
+    background-color: #222;
+    font-family: Cambria;
+    text-align: center;
+    font-size: xx-large;
+    margin: 2%;
+}
+
+StudentID {
+    display: block;
+}
+
+Name {
+    display: block;
+}
+
+Age {
+    display: block;
+}
+
+Email {
+    display: block;
+}
+
+City {
+    display: block;
+}
